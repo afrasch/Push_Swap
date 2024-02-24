@@ -1,0 +1,23 @@
+
+checker file: save as... and pull it from finder into your vsc folder
+give all rights with: chmod 777 checker_name
+run: ARG="2 1 0"; ./push_swap $ARG | ./checker_name $ARG
+change the input as you wish
+
+Visualizer:
+from https://github.com/o-reo/push_swap_visualizer
+run: python3 pyviz.py `ruby -e "puts (-200..300).to_a.shuffle.join(' ')"`
+change the "100" to a different input, a window opens, press play/slower/faster, see the amount of commands needed at the bottom
+
+Tester:
+https://github.com/laisarena/push_swap_tester
+git clone
+inside the tester.sh file change "PUSH_SWAP=./push_swap" to "PUSH_SWAP=../push_swap" so it finds the right dir
+run: bash tester.sh
+it shows exactly all the requirements of the eval sheet
+____
+
+run with: "./push_swap 8 5 98" --> add any numbers, seperated by a space
+OR exg
+./push_swap `ruby -e "puts (1..5).to_a.shuffle.join(' ')"`
+
